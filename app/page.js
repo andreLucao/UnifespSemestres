@@ -1,9 +1,9 @@
 import Image from "next/image";
-import CCOMP from '../components/CCOMP'
+import Controller from "../components/Controller";
 
 
 export default function Home() {
   return (
-    <CCOMP />
+    <Controller />
   );
 }

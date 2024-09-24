@@ -4,26 +4,10 @@ import React from "react";
 import { useState } from "react";
 
 export default function MyComponent() {
-  const checkCourse = () => {
-    // Define your checkCourse logic here
-  };
 
 return (
 <div>
-<div className="sticky top-0 h-14 z-10 bg-emerald-200 flex justify-center">
-    <select id="dropdown" onChange={checkCourse}>
-      <option value="0">Selecione o seu curso</option>
-      <option value="1">ccomp</option>
-      <option value="2">ecomp</option>
-      <option value="3">biotec</option>
-      <option value="4">engbio</option>
-      <option value="5">matcomp</option>
-      <option value="6">materias</option>
-    </select>
-    <button id="changeCourseBtn" className="bg-slate-300 h-10 flex justify-end">OK</button>
-  </div>
 
-  
 <div className="flex">
   
 
