@@ -86,73 +86,73 @@ const HoverEffectComponent = () => {
 
       <div className="flex flex-col space-y-28 pl-3 pr-3 flex-1">
         <div id='container1' className="flex justify-between">
-          <div id="S1-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S1-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S1-M3" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S1-M4" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S1-M5" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S1-M6" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
+          <div id="S1-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">CUV</div>
+          <div id="S1-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">QG</div>
+          <div id="S1-M3" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">LP</div>
+          <div id="S1-M4" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">FBM</div>
+          <div id="S1-M5" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">CTS</div>
+          <div id="S1-M6" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">LAB-MAT</div>
         </div>
 
         <div id='container2' className="flex justify-between">
-          <div id="S2-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S2-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S2-M3" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S2-M4" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S2-M5" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S2-M6" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
+          <div id="S2-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">SEDO</div>
+          <div id="S2-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">GA</div>
+          <div id="S2-M3" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">AED1</div>
+          <div id="S2-M4" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">MD</div>
+          <div id="S2-M5" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">FEMEC</div>
+          <div id="S2-M6" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">CTSA</div>
         </div>
 
         <div id='container3' className="flex justify-between">
-          <div id="S3-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S3-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S3-M3" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S3-M4" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S3-M5" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
+          <div id="S3-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">CVV</div>
+          <div id="S3-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">AL</div>
+          <div id="S3-M3" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">AED2</div>
+          <div id="S3-M4" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">PROB-E</div>
+          <div id="S3-M5" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">FECONT</div>
           <div id="S3-M6" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center"></div>
         </div>
 
         <div id='container4' className="flex justify-between">
-          <div id="S4-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S4-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S4-M3" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S4-M4" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S4-M5" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
+          <div id="S4-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">CN</div>
+          <div id="S4-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">TNC</div>
+          <div id="S4-M3" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">FA</div>
+          <div id="S4-M4" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">PAA</div>
+          <div id="S4-M5" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">PROB</div>
           <div id="S4-M6" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center"></div>
         </div>
 
         <div id='container5' className="flex justify-between">
-          <div id="S5-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S5-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S5-M3" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S5-M4" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S5-M5" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S5-M6" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center"></div>
+          <div id="S5-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">AR1</div>
+          <div id="S5-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">ELE-ALG</div>
+          <div id="S5-M3" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">OL</div>
+          <div id="S5-M4" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">ALC</div>
+          <div id="S5-M5" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">ELETIVA</div>
+          <div id="S5-M6" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center">ELETIVA</div>
         </div>
 
         <div id='container6' className="flex justify-between">
-          <div id="S6-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S6-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S6-M3" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S6-M4" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S6-M5" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S6-M6" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center"></div>
+          <div id="S6-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">AR2</div>
+          <div id="S6-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">AL2</div>
+          <div id="S6-M3" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">EDO</div>
+          <div id="S6-M4" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">IAR</div>
+          <div id="S6-M5" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">ELETIVA</div>
+          <div id="S6-M6" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center">ELETIVA</div>
         </div>
 
         <div id='container7' className="flex justify-between">
-          <div id="S7-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S7-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S7-M3" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S7-M4" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S7-M5" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center"></div>
+          <div id="S7-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">EDP</div>
+          <div id="S7-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">EM</div>
+          <div id="S7-M3" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center">ONL</div>
+          <div id="S7-M4" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center">TG1</div>
+          <div id="S7-M5" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center">ELETIVA</div>
           <div id="S7-M6" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center"></div>
         </div>
 
         <div id='container8' className="flex justify-between">
-          <div id="S8-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S8-M2" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S8-M3" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center"></div>
-          <div id="S8-M4" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center"></div>
+          <div id="S8-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">IGD</div>
+          <div id="S8-M2" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center">MNED</div>
+          <div id="S8-M3" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center">OI</div>
+          <div id="S8-M4" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center">TG2</div>
           <div id="S8-M5" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center"></div>
           <div id="S8-M6" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center"></div>
         </div>
