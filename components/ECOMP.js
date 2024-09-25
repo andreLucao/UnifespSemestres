@@ -94,7 +94,6 @@ const HoverEffectComponent = () => {
           <div id="S1-M6" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
         </div>
 
-        {/* Repeat for other containers */}
         <div id='container2' className="flex justify-between">
           <div id="S2-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
           <div id="S2-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
