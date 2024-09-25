@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 
-const MATERIAS_MATCOMP = () => {
+const HoverEffectComponent = () => {
+  // State to track which group is hovered
   const [hoveredGroup, setHoveredGroup] = useState(null);
 
   // Define the groups and their elements
@@ -15,10 +16,12 @@ const MATERIAS_MATCOMP = () => {
     { id: 'group8', elements: ['S8-M1', 'S8-M2', 'S8-M3', 'S8-M4', 'S8-M5', 'S8-M6'] },
   ];
 
+  // Function to handle mouse enter on an element
   const handleMouseEnter = (groupId) => {
     setHoveredGroup(groupId);
   };
 
+  // Function to handle mouse leave on an element
   const handleMouseLeave = () => {
     setHoveredGroup(null); // Reset when no group is hovered
   };
@@ -36,6 +39,7 @@ const MATERIAS_MATCOMP = () => {
       });
     });
 
+    // Clean up event listeners on component unmount
     return () => {
       groups.forEach((group) => {
         group.elements.forEach((elementId) => {
@@ -56,8 +60,10 @@ const MATERIAS_MATCOMP = () => {
         const element = document.getElementById(elementId);
         if (element) {
           if (hoveredGroup === group.id) {
+            // Darken the elements of the hovered group
             element.classList.add('bg-emerald-700');
-          } else {            
+          } else {
+            // Remove darkening from elements of other groups
             element.classList.remove('bg-emerald-700');
           }
         }
@@ -88,6 +94,7 @@ const MATERIAS_MATCOMP = () => {
           <div id="S1-M6" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
         </div>
 
+        {/* Repeat for other containers */}
         <div id='container2' className="flex justify-between">
           <div id="S2-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
           <div id="S2-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
@@ -150,10 +157,9 @@ const MATERIAS_MATCOMP = () => {
           <div id="S8-M5" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center"></div>
           <div id="S8-M6" className="bg-emerald-300 h-14 w-36 rounded-full flex items-center justify-center"></div>
         </div>
-
-
       </div>
     </div>
   );
 };
 
+export default HoverEffectComponent;
