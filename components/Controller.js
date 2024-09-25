@@ -1,7 +1,13 @@
 'use client';
 
 import React, {useState} from "react";
-import CCOMP from "./CCOMP"
+import CCOMP from "./CCOMP";
+import BIOTEC from "./BIOTEC";
+import MATCOMP from "./MATCOMP"
+import ENGMAT from "./ENGMAT"
+import ENGBIO from "./ENGBIO"
+import ECOMP from "./ECOMP"
+
 
 
 export default function Controller() {

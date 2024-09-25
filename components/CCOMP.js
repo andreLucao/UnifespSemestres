@@ -3,7 +3,13 @@
 import React from "react";
 import { useState } from "react";
 
-export default function MyComponent() {
+export default function MATERIAS_CCOMP() {
+
+  const [isHovered, setIsHovered] = useState(false);
+
+  // Handlers to manage hover state
+  const handleMouseEnter = () => setIsHovered(true);
+  const handleMouseLeave = () => setIsHovered(false);
 
 return (
 <div>
@@ -24,13 +30,54 @@ return (
   </div>
 
   <div  className="flex flex-col space-y-28 pl-3 pr-3 flex-1 ">
-    <div id='container1' className="flex justify-between">
-      <div id="S1-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-      <div id="S1-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-      <div id="S1-M3" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-      <div id="S1-M4" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-      <div id="S1-M5" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
-      <div id="S1-M6" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"></div>
+  <div id='container1' className="flex justify-between">
+      <div
+        id="S1-M1"
+        className={`bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center ${
+          isHovered ? 'bg-emerald-700' : ''
+        }`}
+        
+      ></div>
+      <div
+        id="S1-M2"
+        className={`bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center ${
+          isHovered ? 'bg-emerald-700' : ''
+        }`}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      ></div>
+      <div
+        id="S1-M3"
+        className={`bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center ${
+          isHovered ? 'bg-emerald-700' : ''
+        }`}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      ></div>
+      <div
+        id="S1-M4"
+        className={`bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center ${
+          isHovered ? 'bg-emerald-700' : ''
+        }`}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      ></div>
+      <div
+        id="S1-M5"
+        className={`bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center ${
+          isHovered ? 'bg-emerald-700' : ''
+        }`}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      ></div>
+      <div
+        id="S1-M6"
+        className={`bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center ${
+          isHovered ? 'bg-emerald-700' : ''
+        }`}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      ></div>
     </div>  
 
     <div id='container2' className="flex justify-between">
@@ -103,3 +150,4 @@ return (
 );
 
 }
+
