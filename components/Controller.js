@@ -62,41 +62,70 @@ export default function Controller() {
 
   return (
     <div>
-      <button onClick={() => setShowExcelData(!showExcelData)}>
+      <button 
+        onClick={() => setShowExcelData(!showExcelData)} 
+        className="mb-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"
+      >
         {showExcelData ? 'Hide Table' : 'Show Table'}
       </button>
 
       {showExcelData && (
-        <div>
-          <h1>Excel Data</h1>
-          <ul>
+        <div className="mb-8">
+          <h1 className="text-2xl font-bold mb-4">Excel Data</h1>
+          <ul className="list-disc pl-5">
             {excelData.map((row, index) => (
-              <li key={index}>{JSON.stringify(row)}</li>
+              <li key={index} className="mb-2">{JSON.stringify(row)}</li>
             ))}
           </ul>
         </div>
       )}
 
-      <div className="sticky top-0 h-14 z-10 bg-emerald-200 flex justify-center">
-        <select id="dropdown" onChange={checkCourse}>
-          <option value="Selecione o seu curso">Selecione o seu curso</option>
-          <option value="ccomp">ccomp</option>
-          <option value="ecomp">ecomp</option>
-          <option value="biotec">biotec</option>
-          <option value="engbio">engbio</option>
-          <option value="matcomp">matcomp</option>
-          <option value="engmat">materias</option>
-        </select>
-              <option>Selecione o semestre</option>
-        <select>
-    
-        </select>
-        <button id="changeCourseBtn" className="bg-slate-300 h-10 flex justify-end">OK</button>
+<header className="sticky top-0 z-10 bg-green-700 text-white shadow-md">
+  <div className="container mx-auto px-4 py-3">
+    <div className="flex flex-col items-center mb-4">
+      <div className="flex items-center w-full justify-center mb-2 relative">
+        <img src="/public/logo.webp" alt="Logo" className="w-10 h-10 absolute left-0" />
+        <h1 className="text-xl font-bold">NAME OF THE WEBSITE</h1>
       </div>
+      <div className="flex justify-between w-full">
+        <div className="w-24"></div> {/* Spacer */}
+        <h1 className="text-lg font-semibold">ABOUT US</h1>
+      </div>
+    </div>
+
+    <div className="flex items-center justify-center space-x-4">
+      <select 
+        id="dropdown" 
+        onChange={checkCourse} 
+        className="bg-green-600 border border-green-500 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
+      >
+        <option value="Selecione o seu curso">Selecione o seu curso</option>
+        <option value="ccomp">ccomp</option>
+        <option value="ecomp">ecomp</option>
+        <option value="biotec">biotec</option>
+        <option value="engbio">engbio</option>
+        <option value="matcomp">matcomp</option>
+        <option value="engmat">materias</option>
+      </select>
+      
+      <select className="bg-green-600 border border-green-500 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400">
+        <option>Selecione o semestre</option>
+      </select>
+      
+      <button 
+        id="changeCourseBtn" 
+        className="bg-white text-green-700 px-4 py-2 rounded font-semibold hover:bg-green-100 transition-colors"
+      >
+        OK
+      </button>
+    </div>
+  </div>
+</header>
+
+
       
       <div className="mt-4">
         {renderComponent()}
       </div>
-    </div>
-  );
+    </div>  );
 }
