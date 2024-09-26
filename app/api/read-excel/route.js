@@ -1,6 +1,6 @@
 import fs from 'fs';
 import path from 'path';
-import XLSX from 'xlsx';
+import * as XLSX from 'xlsx';
 import { NextResponse } from 'next/server';
 
 export async function GET() {

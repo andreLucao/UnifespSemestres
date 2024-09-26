@@ -1,5 +1,6 @@
 'use client';
 
+
 import React, { useState, useEffect } from "react";
 import CCOMP from "./CCOMP";
 import BIOTEC from "./BIOTEC";
@@ -85,6 +86,10 @@ export default function Controller() {
           <option value="engbio">engbio</option>
           <option value="matcomp">matcomp</option>
           <option value="engmat">materias</option>
+        </select>
+              <option>Selecione o semestre</option>
+        <select>
+    
         </select>
         <button id="changeCourseBtn" className="bg-slate-300 h-10 flex justify-end">OK</button>
       </div>
