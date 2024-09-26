@@ -97,7 +97,7 @@ export default function Controller() {
       <select 
         id="dropdown" 
         onChange={checkCourse} 
-        className="bg-green-600 border border-green-500 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
+        className="bg-green-700 border border-green-500 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400"
       >
         <option value="Selecione o seu curso">Selecione o seu curso</option>
         <option value="ccomp">ccomp</option>
@@ -108,7 +108,7 @@ export default function Controller() {
         <option value="engmat">materias</option>
       </select>
       
-      <select className="bg-green-600 border border-green-500 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400">
+      <select className="bg-green-700 border border-green-500 rounded px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-400">
         <option>Selecione o semestre</option>
       </select>
       
