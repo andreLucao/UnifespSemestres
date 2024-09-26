@@ -85,11 +85,11 @@ export default function Controller() {
     <div className="flex flex-col items-center mb-4">
       <div className="flex items-center w-full justify-center mb-2 relative">
         <img src="/public/logo.webp" alt="Logo" className="w-10 h-10 absolute left-0" />
-        <h1 className="text-xl font-bold">NAME OF THE WEBSITE</h1>
+        <h1 className="text-xl font-bold">NOME DO SITE</h1>
       </div>
       <div className="flex justify-between w-full">
         <div className="w-24"></div> {/* Spacer */}
-        <h1 className="text-lg font-semibold">ABOUT US</h1>
+        <h1 className="text-lg font-semibold">SOBRE NOS</h1>
       </div>
     </div>
 
