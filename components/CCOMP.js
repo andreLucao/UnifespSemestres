@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const HoverEffectComponent = () => {
+const HoverEffectComponent = ({ onElementClick }) => {
   // State to track which group is hovered
   const [hoveredGroup, setHoveredGroup] = useState(null);
 
@@ -75,7 +75,7 @@ const HoverEffectComponent = () => {
     <div className="flex">
       <div id='container' className="relative top-0 h-auto w-36 p-4">
         <p className="pt-0 pl-6">Termo 1</p>
-        <p id="termo" className="pt-36 pl-6">Termo 2</p>
+        <p className="pt-36 pl-6">Termo 2</p>
         <p className="pt-36 pl-6">Termo 3</p>
         <p className="pt-36 pl-6">Termo 4</p>
         <p className="pt-36 pl-6">Termo 5</p>
@@ -86,7 +86,11 @@ const HoverEffectComponent = () => {
 
       <div className="flex flex-col space-y-28 pl-3 pr-3 flex-1">
         <div id='container1' className="flex justify-between">
-          <div id="S1-M1" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">CUV</div>
+          <div
+            id="calculo em uma variavel"
+            className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"
+            onClick={() => onElementClick('S1-M1')}
+          >CUV</div>
           <div id="S1-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">QG</div>
           <div id="S1-M3" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">LP</div>
           <div id="S1-M4" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">FBM</div>

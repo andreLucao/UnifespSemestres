@@ -13,6 +13,15 @@ export default function Controller() {
   const [selectedCourse, setSelectedCourse] = useState(null);
   const [showExcelData, setShowExcelData] = useState(false);
   const [excelData, setExcelData] = useState([]);
+  const [selectedElementId, setSelectedElementId] = useState(null);
+
+  const handleElementClick = (id) => {
+    console.log(`Clicked on ${id}`);
+    setSelectedElementId(id);
+    // You can perform any action with the selectedElementId here
+    // For example, you could fetch data related to this element
+    // or update other parts of your application state
+  };
 
   // Fetch the excel data when `showExcelData` is set to true
   useEffect(() => {
@@ -37,6 +46,13 @@ export default function Controller() {
   }, [showExcelData]);
   
 
+  useEffect(() => {
+    if (selectedElementId) {
+      
+      console.log(`Selected element ID changed to: ${selectedElementId}`);
+    }
+  }, [selectedElementId]);
+
   const checkCourse = (event) => {
     setSelectedCourse(event.target.value);
   };
@@ -44,7 +60,7 @@ export default function Controller() {
   const renderComponent = (value) => {
     switch (selectedCourse) {
       case 'ccomp':
-        return <CCOMP />;
+        return <CCOMP onElementClick={handleElementClick} />;
       case 'ecomp':
         return <ECOMP />;
       case 'biotec':
@@ -61,7 +77,7 @@ export default function Controller() {
   };
 
   return (
-    <div>
+     <div>
       <button 
         onClick={() => setShowExcelData(!showExcelData)} 
         className="mb-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition-colors"

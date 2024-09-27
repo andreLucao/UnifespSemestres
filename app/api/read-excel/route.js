@@ -36,18 +36,30 @@ export async function GET() {
       // If the value in column B is not "docente", store the row from column B to F
       if (cellValueB !== 'docente') {
         const rowData = [];
-        // Loop from column B (index 1) to F (index 5) and store each value (including nulls)
-        for (let colNum = 1; colNum <= 5; colNum++) {
+        // Loop from column B (index 1) to F (index 5) and store each value
+        for (let colNum = 1; colNum <= 100; colNum++) { // Limit to columns B (1) to F (5)
           const cellAddress = { c: colNum, r: rowNum };
           const cellRef = XLSX.utils.encode_cell(cellAddress);
           const cellValue = sheet[cellRef] ? sheet[cellRef].v : null; // Get the value or null
-          rowData.push(cellValue); // Add to rowData (including nulls)
+          
+          if (cellValue !== null) { // Only push non-null values
+            rowData.push(cellValue);
+          }
         }
-        rows.push(rowData); // Store the row data in the rows array
+        
+        // Push only if rowData is not empty
+        if (rowData.length > 0) {
+          rows.push(rowData);
+        }
       }
     }
 
     console.log('Rows starting from line 2, columns B to F:', rows); // Log the extracted rows
+
+    // Save the extracted rows to a JSON file
+    const jsonFilePath = path.resolve('public', 'extractedData.json');
+    fs.writeFileSync(jsonFilePath, JSON.stringify(rows, null, 2)); // Save with pretty print
+    console.log('Data saved to:', jsonFilePath);
 
     // Return the JSON response with the rows
     return NextResponse.json(rows);
