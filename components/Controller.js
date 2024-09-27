@@ -8,6 +8,7 @@ import MATCOMP from "./MATCOMP";
 import ENGMAT from "./ENGMAT";
 import ENGBIO from "./ENGBIO";
 import ECOMP from "./ECOMP";
+import Card from "./subjectCard"
 
 export default function Controller() {
   const [selectedCourse, setSelectedCourse] = useState(null);
@@ -70,9 +71,9 @@ export default function Controller() {
     if (excelData.length > 0 && selectedElementId) {
       let resultado = buscarDisciplina(selectedElementId);
       console.log(resultado);
+      renderCard();
     }
   }, [excelData, selectedElementId]);
-
 
   useEffect(() => {
     if (selectedElementId) {
@@ -86,6 +87,18 @@ export default function Controller() {
       console.log(`Selected element ID changed to: ${selectedElementId}`);
     }
   }, [selectedElementId]);
+
+
+  //render card must be called inside the "main return"
+  const renderCard = () => {
+    return (
+      <Card>
+        <h2 className="text-center text-xl">Overlay Card</h2>
+        <p className="text-center">This card overlays the background component.</p>
+      </Card>
+    );
+  };
+
 
   const checkCourse = (event) => {
     setSelectedCourse(event.target.value);
@@ -157,7 +170,7 @@ export default function Controller() {
       </header>
 
 
-
+      
       <div className="mt-4">
         {renderComponent()}
       </div>
