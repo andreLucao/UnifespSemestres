@@ -7,7 +7,6 @@ export async function GET() {
   try {
     // Path to the Excel file
     const filePath = path.resolve('public', 'Matriz.xlsx');
-    console.log('File path:', filePath); // Log the file path
 
     // Check if file exists
     if (!fs.existsSync(filePath)) {
@@ -42,9 +41,9 @@ export async function GET() {
           const cellRef = XLSX.utils.encode_cell(cellAddress);
           const cellValue = sheet[cellRef] ? sheet[cellRef].v : null; // Get the value or null
           
-          if (cellValue !== null) { // Only push non-null values
-            rowData.push(cellValue);
-          }
+          
+          rowData.push(cellValue);
+          
         }
         
         // Push only if rowData is not empty
@@ -54,12 +53,12 @@ export async function GET() {
       }
     }
 
-    console.log('Rows starting from line 2, columns B to F:', rows); // Log the extracted rows
+    
 
     // Save the extracted rows to a JSON file
     const jsonFilePath = path.resolve('public', 'extractedData.json');
     fs.writeFileSync(jsonFilePath, JSON.stringify(rows, null, 2)); // Save with pretty print
-    console.log('Data saved to:', jsonFilePath);
+    
 
     // Return the JSON response with the rows
     return NextResponse.json(rows);

@@ -89,7 +89,7 @@ const HoverEffectComponent = ({ onElementClick }) => {
           <div
             id="calculo em uma variavel"
             className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center"
-            onClick={() => onElementClick('S1-M1')}
+            onClick={() => onElementClick('Matemática Geral')}
           >CUV</div>
           <div id="S1-M2" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">QG</div>
           <div id="S1-M3" className="bg-emerald-500 h-14 w-36 rounded-full flex items-center justify-center">LP</div>
